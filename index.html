@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CV electrónico interactivo de Schubert Stalin Lombeida Manjarrez">
+  <title>CV Electrónico | Schubert Stalin Lombeida Manjarrez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar" data-print="hide">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="brand-mark">SL</span>
+      <span>Schubert Lombeida</span>
+    </a>
+    <div class="header-tools">
+      <div class="language-switch" aria-label="Seleccionar idioma">
+        <button type="button" data-lang="es">ES</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">Menu</button>
+    </div>
+    <nav class="main-nav" aria-label="Navegación principal"></nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow">Galápagos, Ecuador</p>
+        <h1>Mgs. Schubert Stalin Lombeida Manjarrez</h1>
+        <p class="lead" data-i18n="position"></p>
+        <div class="hero-actions" data-print="hide">
+          <a class="btn primary" href="#experiencia" data-label-es="Ver experiencia" data-label-en="View experience"></a>
+          <a class="btn" href="#formacion" data-label-es="Ver formación académica" data-label-en="View education"></a>
+          <a class="btn" href="#dashboard" data-label-es="Ver dashboard" data-label-en="View dashboard"></a>
+          <a class="btn" id="pdfLink" href="#" data-label-es="Descargar CV general" data-label-en="Download general CV"></a>
+          <a class="btn" href="#evidencias" data-label-es="Ver respaldos documentales" data-label-en="View documentary evidence"></a>
+          <a class="btn ghost" href="#contacto" data-label-es="Contactar" data-label-en="Contact"></a>
+        </div>
+        <div id="heroMetrics" class="hero-metrics"></div>
+      </div>
+      <aside class="hero-panel">
+        <div class="portrait" id="portrait">SL</div>
+        <div class="signal-grid">
+          <span data-label-es="Dirección institucional" data-label-en="Institutional leadership"></span>
+          <span data-label-es="Planificación estratégica" data-label-en="Strategic planning"></span>
+          <span data-label-es="Gestión pública" data-label-en="Public management"></span>
+          <span data-label-es="Telecomunicaciones" data-label-en="Telecommunications"></span>
+          <span data-label-es="Galápagos" data-label-en="Galapagos"></span>
+          <span data-label-es="Transformación digital" data-label-en="Digital transformation"></span>
+        </div>
+      </aside>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+      <div class="section-heading">
+        <p class="eyebrow" data-label-es="Contacto" data-label-en="Contact"></p>
+        <h2>Mgs. Schubert Stalin Lombeida Manjarrez</h2>
+      </div>
+      <div id="contactCard" class="contact-card"></div>
+    </section>
+
+
+    <section id="perfil" class="section">
+      <div class="section-heading">
+        <p class="eyebrow" data-label-es="Perfil ejecutivo" data-label-en="Executive Profile"></p>
+        <h2 data-label-es="Dirección, planificación y proyectos como eje profesional" data-label-en="Leadership, planning and projects as the professional axis"></h2>
+      </div>
+      <div class="profile-grid">
+        <article class="text-panel">
+          <p data-i18n="executiveProfile"></p>
+        </article>
+        <article class="text-panel accent">
+          <h3 data-label-es="Eje estratégico prioritario: dirección, planificación y gestión de proyectos" data-label-en="Priority strategic axis: leadership, planning and project management"></h3>
+          <p data-i18n="strategicAxis"></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="documentos-personales" class="section">
+      <div class="section-heading">
+        <p class="eyebrow" data-label-es="Documentos personales" data-label-en="Personal Documents"></p>
+        <h2 data-label-es="Identidad, residencia permanente y certificado de votación" data-label-en="Identity, permanent residence and voting certificate"></h2>
+      </div>
+      <div id="identityDocsList" class="evidence-list"></div>
+    </section>
+
+    <section id="dashboard" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Dashboard</p>
+        <h2 data-label-es="Indicadores internos de perfil profesional" data-label-en="Internal Professional Profile Indicators"></h2>
+      </div>
+      <div id="dashboardSummary" class="dashboard-summary"></div>
+      <div id="indicatorList" class="dashboard-grid"></div>
+    </section>
+
+    <section id="formacion" class="section">
+      <div class="section-heading">
+        <p class="eyebrow" data-label-es="Formación académica" data-label-en="Education"></p>
+        <h2 data-label-es="Títulos registrados, formación en curso y antecedentes documentados" data-label-en="Registered degrees, ongoing education and documented background"></h2>
+      </div>
+      <div id="educationList" class="card-grid"></div>
+    </section>
+
+    <section id="experiencia" class="section">
+      <div class="section-heading with-controls">
+        <div>
+          <p class="eyebrow" data-label-es="Experiencia profesional" data-label-en="Professional Experience"></p>
+          <h2 data-label-es="Línea de tiempo cronológica" data-label-en="Chronological Timeline"></h2>
+        </div>
+        <select id="experienceFilter" aria-label="Filtrar experiencia por competencia"></select>
+      </div>
+      <div id="timeline" class="timeline"></div>
+    </section>
+
+    <section id="certificaciones" class="section">
+      <div class="section-heading with-controls">
+        <div>
+          <p class="eyebrow" data-label-es="Certificaciones, cursos y seminarios" data-label-en="Certifications, Courses and Seminars"></p>
+          <h2 data-label-es="Matriz cronológica filtrable" data-label-en="Filterable Chronological Matrix"></h2>
+        </div>
+        <div class="filters" data-print="hide">
+          <input id="certSearch" type="search" placeholder="Buscar">
+          <select id="certYear"></select>
+          <select id="certCategory"></select>
+        </div>
+      </div>
+      <div id="certList" class="cert-list"></div>
+    </section>
+
+    <section id="proyectos" class="section">
+      <div class="section-heading">
+        <p class="eyebrow" data-label-es="Proyectos y áreas de impacto" data-label-en="Projects and Impact Areas"></p>
+        <h2 data-label-es="Líneas de experiencia con valor institucional" data-label-en="Experience areas with institutional value"></h2>
+      </div>
+      <div id="projectList" class="card-grid impact"></div>
+    </section>
+
+    <section id="evidencias" class="section">
+      <div class="section-heading with-controls">
+        <div>
+          <p class="eyebrow" data-label-es="Evidencias documentales" data-label-en="Documentary Evidence"></p>
+          <h2 data-label-es="Repositorio organizado de respaldos" data-label-en="Organized Evidence Repository"></h2>
+        </div>
+        <div class="filters" data-print="hide">
+          <input id="evidenceSearch" type="search" placeholder="Buscar respaldo">
+          <select id="evidenceYear" aria-label="Filtrar evidencias por año"></select>
+          <select id="evidenceFilter" aria-label="Filtrar evidencias"></select>
+        </div>
+      </div>
+      <div id="evidenceList" class="evidence-list"></div>
+    </section>
+
+  </main>
+
+  <button class="print-btn" type="button" onclick="window.print()" data-print="hide" data-label-es="Imprimir / PDF" data-label-en="Print / PDF"></button>
+
+  <script src="data.js"></script>
+  <script src="evidence-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
